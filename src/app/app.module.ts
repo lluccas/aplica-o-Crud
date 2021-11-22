@@ -16,7 +16,17 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { RoxoDirective } from './directives/roxo.directive';
 import { ProductCreatComponent } from './components/product/product-creat/product-creat.component';
-
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule} from '@angular/forms'
+import { MatFormFieldModule} from '@angular/material/form-field'
+import { MatInputModule} from '@angular/material/input';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
 
 @NgModule({
   
@@ -28,7 +38,9 @@ import { ProductCreatComponent } from './components/product/product-creat/produc
     HomeComponent,
     ProductCrudComponent,
     RoxoDirective,
-    ProductCreatComponent
+    ProductCreatComponent,
+    ProductReadComponent,
+    ProductRead2Component
   ],
   imports: [
     BrowserModule,
@@ -37,7 +49,16 @@ import { ProductCreatComponent } from './components/product/product-creat/produc
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
